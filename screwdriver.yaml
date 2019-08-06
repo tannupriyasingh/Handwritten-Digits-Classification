@@ -1,8 +1,8 @@
 shared:
     image: node:6
-annotations:
-     screwdriver.cd/cpu: MICRO
-     screwdriver.cd/disk: LOW
+    annotations:
+         screwdriver.cd/cpu: MICRO
+         screwdriver.cd/disk: LOW
 jobs:
     job1:
         requires: [~commit, ~pr]
