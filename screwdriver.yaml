@@ -1,0 +1,11 @@
+shared:
+    image: node:6
+jobs:
+    job1:
+        requires: [~commit, ~pr]
+        steps:
+            - echo: echo hello
+    job2:
+        blockedBy: [~job1]
+        steps:
+            - echo: echo bye
